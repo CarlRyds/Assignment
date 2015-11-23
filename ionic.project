@@ -1,0 +1,10 @@
+{
+  "name": "TapTapCurrency",
+  "app_id": "a15f24dd”,
+  "proxies": [
+    {
+      "path": "/api",
+      "proxyUrl": "devel.farebookings.com/api/curconversor/EUR/GBP/1/json“
+    }
+  ]
+}

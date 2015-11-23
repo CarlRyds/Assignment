@@ -1,0 +1,38 @@
+<ion-view title="Converter">
+    <ion-content padding="'true'" class="has-header">
+        
+        <form id="convert" class="list">
+            <ion-item id="GBP" menu-close="" class="item-thumbnail-left">
+                <img src="img/GBP.png">
+                <h2>British Pound</h2>
+                <p>GBP</p>
+            </ion-item>  
+           
+                <label class="item item-input purpleBack" name="amount">
+                <span class="input-label textWhite">Amount to convert:</span>
+                <span class="symbol">&pound;</span>
+                <input type="number" id="amount" name="amount" ng-model="amount" value="" placeholder="">
+            </label>
+   
+        </form>
+        
+        <ion-list>
+            <ion-item menu-close="">USD 
+            <span class="symbolFloat">&#36;</span>
+            <span class="amountFloat" ng-bind="amount * gbpUSD | number : 2"></span></ion-item>
+            <ion-item menu-close="">EURO
+            <span class="symbolFloat">&euro;</span>
+            <span class="amountFloat" ng-bind="amount * gbpEURO | number : 2"></span></ion-item>
+            <ion-item menu-close="">AUD
+            <span class="symbolFloat">&#36;</span>
+            <span class="amountFloat" ng-bind="amount * gbpAUD | number : 2"></span></ion-item>
+            <ion-item menu-close="">CAD
+            <span class="symbolFloat">&#36;</span>
+            <span class="amountFloat" ng-bind="amount * gbpCAD | number : 2"></span></ion-item>
+            <ion-item menu-close="">JPY
+            <span class="symbolFloat">&yen;</span>
+            <span class="amountFloat" ng-bind="amount * gbpYEN | number : 2"></span></ion-item>
+        </ion-list>
+        
+    </ion-content>
+</ion-view>

@@ -1,0 +1,47 @@
+/* Convertor > Currency Amount > Float left */
+
+.amountFloat {
+    float: right;
+    text-align: right;
+}
+
+.iconSize {
+    width: 250px;
+}
+
+.alignCenter {
+    text-align: center;
+}
+
+.purpleBack {
+    background-color: #9375ed;
+}
+
+.whiteBack {
+    background-color: white;
+    margin-right: 10px;
+}
+
+input[type="number"] {
+    background-color: white;
+    padding: 10px;
+    margin-right: 35px;
+}
+
+.symbol {
+    background-color: white;
+    width: 30px;
+    height: 34px;
+    text-align: right;
+    padding-top: 6px;
+}
+
+.symbolFloat {
+    float: right;
+    text-align: right;
+    padding-left: 5px;
+}
+
+.textWhite {
+    color: white;
+}

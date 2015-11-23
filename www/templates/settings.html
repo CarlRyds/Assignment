@@ -1,0 +1,160 @@
+<ion-view title="Settings">
+    <ion-content padding="'true'" class="has-header">
+        <form class="list">
+            <div>
+                <br>
+                <p class="alignCenter">Choose which currencies you would like to 
+                    use and set the exchange rates (remember to save any changes)</p>
+                    <h6 class="alignCenter">Last saved: {{rateUpdateDate}}</h6>
+                <br>
+            </div>
+            
+            <ion-toggle toggle-class="toggle-royal" ng-checked="gbpON" name="GBP" id="GBP"><strong>GBP</strong></ion-toggle>
+            <div class="list">
+                <label class="item item-input">
+                    <span class="input-label">1 GBP = USD</span>
+                    <input type="text" class="amountFloat" name="gbpUSD" id="gbpUSD" value="{{gbpUSD}}" />
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">1 GBP = EURO</span>
+                    <input type="text" class="amountFloat" name="gbpEURO" id="gbpEURO" value="{{gbpEURO}}" />
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">1 GBP = AUD</span>
+                    <input type="text" class="amountFloat" name="gbpAUD" id="gbpAUD" value="{{gbpAUD}}" />
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">1 GBP = CAD</span>
+                    <input type="text" class="amountFloat" name="gbpCAD" id="gbpCAD" value="{{gbpCAD}}" />
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">1 GBP = YEN</span>
+                    <input type="text" class="amountFloat" name="gbpYEN" id="gbpYEN" value="{{gbpYEN}}" />
+                </label>
+            </div>
+            
+            <ion-toggle toggle-class="toggle-royal" ng-checked="usdON" name="USD"><strong>USD</strong></ion-toggle>
+            <div class="list">
+                <label class="item item-input">
+                    <span class="input-label">1 USD = GBP</span>
+                    <input type="text" class="amountFloat" name="usdGBP" id="usdGBP" value="{{usdGBP}}" />
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">1 USD = EURO</span>
+                    <input type="text" class="amountFloat" name="usdEURO" id="usdEURO" value="{{usdEURO}}" />
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">1 USD = AUD</span>
+                    <input type="text" class="amountFloat" name="usdAUD" id="usdAUD" value="{{usdAUD}}" />
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">1 USD = CAD</span>
+                    <input type="text" class="amountFloat" name="usdCAD" id="usdCAD" value="{{usdCAD}}" />
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">1 USD = YEN</span>
+                    <input type="text" class="amountFloat" name="usdYEN" id="usdYEN" value="{{usdYEN}}" />
+                </label>
+            </div>
+            
+            <ion-toggle toggle-class="toggle-royal" ng-checked="euroON" name="EURO"><strong>EURO</strong></ion-toggle>
+            <div class="list">
+                <label class="item item-input">
+                    <span class="input-label">1 EURO = GBP</span>
+                    <input type="text" class="amountFloat" name="euroGBP" id="euroGBP" value="{{euroGBP}}" />
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">1 EURO = USD</span>
+                    <input type="text" class="amountFloat" name="euroUSD" id="euroUSD" value="{{euroUSD}}" />
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">1 EURO = AUD</span>
+                    <input type="text" class="amountFloat" name="euroAUD" id="euroAUD" value="{{euroAUD}}" />
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">1 EURO = CAD</span>
+                    <input type="text" class="amountFloat" name="euroCAD" id="euroCAD" value="{{euroCAD}}" />
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">1 EURO = YEN</span>
+                    <input type="text" class="amountFloat" name="euroYEN" id="euroYEN" value="{{euroYEN}}" />
+                </label>
+            </div>
+            
+            <ion-toggle toggle-class="toggle-royal" ng-checked="audON" name="AUD"><strong>AUD</strong></ion-toggle>
+            <div class="list">
+                <label class="item item-input">
+                    <span class="input-label">1 AUD = GBP</span>
+                    <input type="text" class="amountFloat" name="audGBP" id="audGBP" value="{{audGBP}}" />
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">1 AUD = USD</span>
+                    <input type="text" class="amountFloat" name="audUSD" id="audUSD" value="{{audUSD}}" />
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">1 AUD = EURO</span>
+                    <input type="text" class="amountFloat" name="audEURO" id="audEURO" value="{{audEURO}}" />
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">1 AUD = CAD</span>
+                    <input type="text" class="amountFloat" name="audCAD" id="audCAD" value="{{audCAD}}" />
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">1 AUD = YEN</span>
+                    <input type="text" class="amountFloat" name="audYEN" id="audYEN" value="{{audYEN}}" />
+                </label>
+            </div>
+            
+            <ion-toggle toggle-class="toggle-royal" ng-checked="cadON" name="CAD"><strong>CAD</strong></ion-toggle>
+            <div class="list">
+                <label class="item item-input">
+                    <span class="input-label">1 CAD = GBP</span>
+                    <input type="text" class="amountFloat" name="cadGBP" id="cadGBP" value="{{cadGBP}}" />
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">1 CAD = USD</span>
+                    <input type="text" class="amountFloat" name="cadUSD" id="cadUSD" value="{{cadUSD}}" />
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">1 CAD = EURO</span>
+                    <input type="text" class="amountFloat" name="cadEURO" id="cadEURO" value="{{cadEURO}}" />
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">1 CAD = AUD</span>
+                    <input type="text" class="amountFloat" name="cadAUD" id="cadAUD" value="{{cadAUD}}" />
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">1 CAD = YEN</span>
+                    <input type="text" class="amountFloat" name="cadYEN" id="cadYEN" value="{{cadYEN}}" />
+                </label>
+            </div>
+            
+            <ion-toggle toggle-class="toggle-royal" ng-checked="yenON" name="YEN"><strong>JPY</strong></ion-toggle>
+            <div class="list">
+                <label class="item item-input">
+                    <span class="input-label">1 YEN = GBP</span>
+                    <input type="text" class="amountFloat" name="yenGBP" id="yenGBP" value="{{yenGBP}}" />
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">1 YEN = USD</span>
+                    <input type="text" class="amountFloat" name="yenUSD" id="yenUSD" value="{{yenUSD}}" />
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">1 YEN = EURO</span>
+                    <input type="text" class="amountFloat" name="yenEURO" id="yenEURO" value="{{yenEURO}}" />
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">1 YEN = AUD</span>
+                    <input type="text" class="amountFloat" name="yenAUD" id="yenAUD" value="{{yenAUD}}" />
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">1 YEN = CAD</span>
+                    <input type="text" class="amountFloat" name="yenCAD" id="yenCAD" value="{{yenCAD}}" />
+                </label>
+            </div>
+            
+            <button ng-click="save(GBP)" class="button button-royal button-block">Save Changes</button>
+            
+        </form>
+    </ion-content>
+</ion-view>
